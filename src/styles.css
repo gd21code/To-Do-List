@@ -1,6 +1,7 @@
 /* styles.css */
 :root {
   --backgroundColor: #87ceeb;
+  --navColor: #ffc0cb;
 }
 
 * {
@@ -8,6 +9,71 @@
   padding: 0;
 }
 
+/********** body layout *********/
+/********************************/
 body {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 6fr;
+}
+
+/* header */
+header {
+  display: grid;
+  grid-column: 1 / -1;
+  align-items: center;
   background-color: var(--backgroundColor);
+}
+
+header h1 {
+  margin-left: 10px;
+}
+
+/* nav display */
+nav {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--navColor);
+}
+
+#button-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  padding: 4px;
+  align-self:center
+}
+
+/* project display */
+#project-display h2 {
+  text-align: center;
+}
+
+/* task area */
+h3 {
+  text-align: center;
+  padding: 20px;
+}
+
+table {
+  display: flex;
+  justify-content: center;
+}
+
+thead {
+  width: 80%;
+  align-items: center;
+}
+
+tr {
+  display: flex;
+  justify-content: space-between;
 }
