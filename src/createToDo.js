@@ -16,7 +16,7 @@ function createToDo(title, description, dueDate, priority) {
 
     console.log(toDoArray);
     return newToDo;
-}
+};
 
 console.log(createToDo('blahtitle', 'blahdescription', 'blahduedate', 'blahpriority'));
 console.log(createToDo('blah1', 'blah2', 'blah3', 'blah4'));
