@@ -1,4 +1,5 @@
 import './styles.css';
 
-import {displayProjectModal} from './displayModal.js';
+import {displayProjectModal, displayTaskModal} from './displayModal.js';
 displayProjectModal();
+displayTaskModal();
