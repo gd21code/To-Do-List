@@ -55,7 +55,40 @@
         </div>
     </dialog>
 
-    <!-- <dialog id="taskDialogModal"></dialog> -->
+    <dialog id="taskDialogModal">
+        <form id="taskForm">
+            <div>
+                <div>
+                    <label for="task-name">Title: </label><br>
+                    <input id="task-name" name="task-name" type="text" placeholder="Task Name" required/><br><br>
+                </div>
+                <div>
+                    <label for="description">Description: </label><br>
+                    <input id="description" name="description" type="text" placeholder="Describe your task" required/><br><br>
+                </div>
+                <div>
+                    <label for="due-date">Due Date: </label><br>
+                    <input id="due-date" name="due-date" type="date" required/><br><br>
+                </div>
+                <div>
+                    <label for="priority">Priority: </label><br>
+                    <select id="priority" name="priority">
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                    </select><br><br>
+                </div>
+                <div>
+                    <label for="project-select">Project: </label><br>
+                    <select id="project-select" name="project-select"></select><br><br>
+                </div>
+            </div>
+            <button id=taskSubmitBtn type="submit">Add Task</button>
+        </form>
+        <div id="taskClose">
+            <button id="taskCloseBtn">Close</button>
+        </div>
+    </dialog>
 
 </body>
 </html>
