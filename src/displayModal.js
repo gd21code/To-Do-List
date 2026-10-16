@@ -1,5 +1,4 @@
-// display project modal upon click
-
+// Project Modal
 function displayProjectModal() {
     const projectModal = document.querySelector('#projectDialogModal');
     const projectAddBtn = document.querySelector('#projectAddBtn');
@@ -14,6 +13,19 @@ function displayProjectModal() {
     });
 };
 
-// function displayTaskModal() {};
+// Task Modal
+function displayTaskModal() {
+    const taskModal = document.querySelector('#taskDialogModal');
+    const taskAddBtn = document.querySelector('#taskAddBtn');
+    const taskCloseBtn = document.querySelector('#taskCloseBtn');
 
-export {displayProjectModal};
+    taskAddBtn.addEventListener('click', () => {
+        taskModal.showModal();
+    });
+
+    taskCloseBtn.addEventListener('click', () => {
+        taskModal.close();
+    });
+};
+
+export {displayProjectModal, displayTaskModal};
