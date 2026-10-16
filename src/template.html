@@ -13,8 +13,8 @@
 
     <nav>
         <div id="button-display">
-            <button>Add Project</button>
-            <button>Add Task</button>
+            <button id="projectAddBtn">Add Project</button>
+            <button id="taskAddBtn">Add Task</button>
         </div>
         <div id="project-display">
             <h2>Projects</h2>
@@ -41,5 +41,21 @@
             <tbody></tbody>
         </table>
     </div>
+
+    <dialog id="projectDialogModal">
+        <form id="projectForm">
+            <div>
+                <label for="project-name">Name: </label>
+                <input id="project-name" name="project-name" type="text" placeholder="Project Name" required/>
+            </div>
+            <button id="projectSubmitBtn" type="submit">Add Project</button>
+        </form>
+        <div id="projectClose">
+            <button id="projectCloseBtn">Close</button>
+        </div>
+    </dialog>
+
+    <!-- <dialog id="taskDialogModal"></dialog> -->
+
 </body>
 </html>
